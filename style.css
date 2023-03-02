@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(68, 68, 250);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 55px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cancha{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 80vh;
+    width: 80vw;
+    background-color: blue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.cancha-left{
+    display:grid;
+    border: 2px solid white;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(50px, 100px);
+    width: 50%;
+}
+.cancha-left section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    /*display: inline;
+    text-align: center;*/
+} 
+
+/******************** cabeza izquierda ************************************/
+
+
+.header-cancha-left{
+    border: 2px solid white;
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+    grid-row-start: 1;
+    grid-row-end:2;
+    
+}
+.header-cancha-left h4 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+/****************************** main izquierda ***********************************/
+
+.main-cancha-left{
+    border: 2px solid white;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end:2;
+    background: url(/imagen/tennis-6533589_640.jpg) center no-repeat ;
+    
+}
+
+/************************** cuerpo arriba izquierdo ********************************/
+
+.body-cancha-arriba-left{
+    border: 2px solid white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.body-cancha-arriba-left h4{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 43px;
+}
+
+/************************** cuerpo abajo izquierdo ************************************/
+
+.body-cancha-abajo-left{
+    border: 2px solid white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background: url(/imagen/tennis-5782695_640.jpg) center no-repeat;
+}
+.body-cancha-abajo-left h4{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;   
+    padding-bottom: 43px;
+}
+
+/******************************* pie izquierdo ************************************/
+
+.footer-cancha-left{
+    border: 2px solid white;
+    grid-column-start:1 ;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+.footer-cancha-left h4 {
+    color: white;
+    font-size: 22px;
+    
+}
+
+              /************************cancha-rigth***************************/
+
+
+.cancha-rigth{
+    border: 2px solid white;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(50px,100px);
+}
+.cancha-rigth section{
+    border: 2px solid white;
+    display: inline;
+    text-align: center;
+    
+}
+
+/****************************** cabeza derecha ****************************/
+
+.header-cancha-rigth{
+    border: 2px solid white;
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+.header-cancha-rigth h4 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.header-cancha-rigth p {
+    color: white;
+    text-align: center;
+}
+
+/************************************* main derecho *********************************/
+
+.main-cancha-rigth{
+    border: 2px solid white;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end:4;
+    background: url(/imagen/tennis-934841_640.jpg) 70% 70% no-repeat;
+    
+}
+
+/******************************* cuerpo arriba derecho *****************************/
+
+.body-cancha-arriba-rigth{
+    border: 2px solid white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.body-cancha-arriba-rigth h4 {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 35px;
+}
+table{
+    width: 80%;
+    margin-left: 35px;
+    border-collapse: collapse;
+}
+table thead{
+    color: white;
+    background-color: rgb(10, 120, 223);
+    
+}
+tbody tr, tfoot tr {
+    background-color: white;
+}
+
+/********************************** cuerpo abajo izquierdo **************************/
+
+.body-cancha-abajo-rigth{
+    border: 2px solid white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.body-cancha-abajo-rigth p{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+#butom {
+    color: rgb(240, 240, 240);
+    background-color: rgb(21, 167, 240);
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 20px;
+}
+
+/******************************* pie de pagina derecho **********************************************/
+
+.footer-cancha-rigth{
+    border: 2px solid white;
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    background: url(/imagen/tennis-court-443267_640.jpg) center no-repeat;
+}
+.footer-cancha-rigth p{
+    color: white;
+    margin-top: 35px;
+    letter-spacing: 2px;
+}
